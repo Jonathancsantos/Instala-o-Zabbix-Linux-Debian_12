@@ -11,7 +11,7 @@ apt update`
 `apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent`
 
 ## 3. Configurar o Banco de Dados MariaDB:
-###Instale o MariaDB e configure o banco de dados para o Zabbix:
+### Instale o MariaDB e configure o banco de dados para o Zabbix:
 `apt install mariadb-server`
 ### No prompt do MySQL, insira a senha do usuário root e execute os seguintes comandos para configurar o banco de dados:
 `mysql -uroot -p

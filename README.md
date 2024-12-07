@@ -32,8 +32,8 @@ apt update`
 `DBPassword=password`
 ## 6. Reiniciar os Serviços:
 ### Reinicie e habilite os serviços do Zabbix:
-`- systemctl restart zabbix-server zabbix-agent apache2`
-`- systemctl enable zabbix-server zabbix-agent apache2`
+- `systemctl restart zabbix-server zabbix-agent apache2`
+- `systemctl enable zabbix-server zabbix-agent apache2`
 
 ## 7. Acessar o Zabbix Frontend:
 ### Para acessar o Zabbix Frontend, abra um navegador e use o endereço IP definido para o servidor seguido de /zabbix, como no exemplo:

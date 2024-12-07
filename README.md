@@ -14,12 +14,12 @@ apt update`
 ### Instale o MariaDB e configure o banco de dados para o Zabbix:
 `apt install mariadb-server`
 ### No prompt do MySQL, insira a senha do usuário root e execute os seguintes comandos para configurar o banco de dados:
-`- mysql -uroot -p`
-`- password` 
-`- mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin`
-`- mysql> create user zabbix@localhost identified by 'password`
-`- mysql> grant all privileges on zabbix.* to zabbix@localhost`
-`- mysql> set global log_bin_trust_function_creators = 1`
+`- mysql -uroot -p
+`- password
+`- mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin
+`- mysql> create user zabbix@localhost identified by 'password
+`- mysql> grant all privileges on zabbix.* to zabbix@localhost
+`- mysql> set global log_bin_trust_function_creators = 1
 `- mysql> quit`
 
 ## 4. Importar o Esquema do Banco de Dados:

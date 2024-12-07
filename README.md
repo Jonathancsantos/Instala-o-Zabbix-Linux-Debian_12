@@ -1,22 +1,22 @@
 # Comandos para a correta instalação do Zabbix no sistema operacional Debian_12
 
 # 1.	Adicionar o Repositório do Zabbix:
-wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_latest+debian12_all.deb
-dpkg -i zabbix-release_latest+debian12_all.deb
-apt update
+- wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_latest+debian12_all.deb
+- dpkg -i zabbix-release_latest+debian12_all.deb
+- apt update
 
 # 2.	 Instalar o Zabbix Server, Frontend e Agent:
 apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
 
 # 3. Configurar o Banco de Dados MariaDB:
-apt install mariadb-server,
-mysql -uroot -p,
-password,
-mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin,
-mysql> create user zabbix@localhost identified by 'password',
-mysql> grant all privileges on zabbix.* to zabbix@localhost,
-mysql> set global log_bin_trust_function_creators = 1,
-mysql> quit;
+- apt install mariadb-server
+- mysql -uroot -p
+- password
+mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin
+mysql> create user zabbix@localhost identified by 'password'
+mysql> grant all privileges on zabbix.* to zabbix@localhost
+mysql> set global log_bin_trust_function_creators = 1
+mysql> quit
 
 # 4.	 Importar o Esquema do Banco de Dados:
 zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix

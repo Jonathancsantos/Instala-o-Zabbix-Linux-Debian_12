@@ -2,14 +2,13 @@
 
 ## 1. Adicionar o Repositório do Zabbix:
 ### Execute os seguintes comandos para adicionar o repositório do Zabbix no Debian 12:
-```bash
-wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_latest+debian12_all.deb
+`wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_latest+debian12_all.deb
 dpkg -i zabbix-release_latest+debian12_all.deb
-apt update
+apt update`
 
 ## 2. Instalar o Zabbix Server, Frontend e Agent:
 ### Instale os pacotes necessários para o Zabbix Server, Frontend e Agent:
-apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+`apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent`
 
 ## 3. Configurar o Banco de Dados MariaDB:
 ###Instale o MariaDB e configure o banco de dados para o Zabbix:

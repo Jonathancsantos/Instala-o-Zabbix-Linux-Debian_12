@@ -1,4 +1,4 @@
-# Comandos para a correta instalação do Zabbix no sistema operacional Debian_12
+# Instalação Completa do Zabbix no Debian 12
 
 ## 1.	Adicionar o Repositório do Zabbix:
   ### Execute os seguintes comandos para adicionar o repositório do Zabbix no Debian 12:
